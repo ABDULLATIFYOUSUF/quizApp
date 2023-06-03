@@ -31,6 +31,37 @@
         <button class="btn btn-primary" onclick="quizStart()">Quiz Start?</button>
     </div>
 
+    <section class="questions">
+        <div class="header">
+            <div class="wish"><h1>Best of Luck</h1><p>ABDUL LATIF</p></div>
+            <div class="timer"><p>Timer</p>
+            <span>00:00</span>
+            </div>
+
+        </div>
+        <div class="quizBody">
+            <h4 id="question">Q: Lorem ipsum dolor sit amet.</h4>
+        </div>
+        <ul id="quizOptions">
+            <li>lorem ipsum dolor sit amet.</li>
+            <li>lorem ipsum dolor sit amet.</li>
+            <li>lorem ipsum dolor sit amet.</li>
+            <li>lorem ipsum dolor sit amet.</li>
+        </ul>
+        <div class="footer">
+            <div><P>1/10</P></div>
+            <div><button class="btn btn-primary" id="nextQues" onclick="nextQues()">Next</button></div>
+            
+        </div>
+    </section>
+    <section class="result">
+        <h1>Result: <span id="percent"></span></h1>
+        <h1>Total Questions: <span id="totalQuesElement"></span> </h1>
+        <h1>Correct Answers: <span id="correctAnsElement"></span></h1>
+        <h1>Wrong Answers: <span id="wrongAnsElement"></span></h1>
+        <h1>Total Score: <span id="totalScoreElement"></span></h1>
+    </section>
+
 </body>
 <script src="app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
